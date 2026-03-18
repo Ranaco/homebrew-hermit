@@ -1,22 +1,22 @@
 class Hermit < Formula
   desc "Hermit KMS — Secure secret management CLI"
   homepage "https://github.com/Ranaco/hermit"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Ranaco/hermit/releases/download/v#{version}/hermit-macos-arm64"
-      sha256 "e2231f2bc696c125714645b39748de8e12a137a7aa7b98e456c141129b4f0935"
+      sha256 "988eab9e876936214dd46cda385946e84ca4217bbfdfdd38c7ad838ac736d002"
     else
       url "https://github.com/Ranaco/hermit/releases/download/v#{version}/hermit-macos-x64"
-      sha256 "87bc0f978e5e0ddccfbec6f9ee427e8dfb2338c1d6ea00696bd5fd74aef750fd"
+      sha256 "cccaca9741f230afc2c9860bac23a872418987ada8e522780dc2d32eae104011"
     end
   end
 
   on_linux do
     url "https://github.com/Ranaco/hermit/releases/download/v#{version}/hermit-linux-x64"
-    sha256 "e54ea33928cb5cc5dc8ad471622320366ad88533393e2c9756d9f44e55480e50"
+    sha256 "58c964dceb4932b0bc457069da1ad707997c01e4bae6f2cba7c3702b67dcc38f"
   end
 
   def install
